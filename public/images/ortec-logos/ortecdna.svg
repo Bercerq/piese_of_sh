@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="540px" height="6px" viewBox="0 0 540 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Data-6" transform="translate(-766.000000, -1074.000000)">
+            <g id="Group" transform="translate(766.000000, 448.000000)">
+                <g transform="translate(0.000000, 626.579760)" id="Rectangle-188">
+                    <rect fill="#EE7D0C" x="0" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#EE7D0C" x="450" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#96BF0D" x="495" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#EE7D0C" x="225" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#A81E73" x="360" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#012D6A" x="405" y="0" width="45" height="5.42024014"></rect>
+                    <path d="M270,0 L273.632812,0 L315,0 L315,5.42024014 L270,5.42024014 L270,0 Z" fill="#96BF0D"></path>
+                    <rect fill="#009BC2" x="315" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#A81E73" x="135" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#012D6A" x="180" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#96BF0D" x="45" y="0" width="45" height="5.42024014"></rect>
+                    <rect fill="#009BC2" x="90" y="0" width="45" height="5.42024014"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

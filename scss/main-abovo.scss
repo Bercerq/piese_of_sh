@@ -1,0 +1,50 @@
+@import 
+'theme/global-abovo',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0 15px;
+  background: url('../images/theme-logos/abovo-media-alt.svg') no-repeat;
+  background-size: 100%;
+  width: 150px;
+  height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+
+  .nav-link.active,
+  .nav-link.active:hover {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+  }
+}
+
+.alerts-list-toggle i {
+  top: 20px;
+}
+
+@media (min-width: 992px) {
+  .sidebar.mini {
+    .nav-link.active i {
+      box-shadow: inset -1px 0 0 0 $color-primary2;
+      transition: .4s;
+    }
+  }
+}

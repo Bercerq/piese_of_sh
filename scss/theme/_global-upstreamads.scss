@@ -1,0 +1,74 @@
+// Global Variables
+//------------------------------------------------------
+// color elements
+$white : #fff !default;
+$black : #000 !default;
+$transparent : transparent !default;
+
+$grey-xxx-light: #f7f7f7 !default;
+$grey-xx-light : #efefef !default;
+$grey-x-light : #eee;
+$grey-light : #ddd !default;
+$grey-medium: #ccc;
+$grey : #878787;
+$grey-dark : #35454c;
+$optout-dark: #252e32;
+$optout-dark-grey: #35454c;
+$optout-light-grey: #9a9d9e;
+$optout-grey: #555555;
+$petrol-light : #b9c4cf;
+$petrol : #b9c4cb;
+
+
+$deep-blue: #354052 !default;
+$dark-blue: #041e42 !default;
+$blue-aqua : #0091EA !default;
+$deep-pink : #a81e73 !default;
+$green: #91EA00 !default;
+$blue: #e67e22 !default;
+$orange: #ff6d00 !default;
+$red: #d9534f !default;
+
+$color-primary1 : $blue;
+$color-primary2 : $blue;
+$color-primary: $blue;
+$color-success : $green;
+$color-warning: $orange;
+$color-danger: $red;
+$color-link: $dark-blue;
+$color-fonts : $grey-dark;
+// fonts
+$font-stack: ('Roboto', 'Helvetica', 'Arial', sans-serif) !default;
+$font-size-x-small : 0.75em;
+$font-size-small : 0.9em;
+$font-size-normal : 1em;
+$font-size-large : 1.25em;
+$font-size-x-large : 1.5em;
+$font-size-xx-large : 2em;
+$font-size-xxx-large : 3em;
+
+$font-weight-light : 300;
+$font-weight-normal : 400;
+$font-weight-medium : 500;
+$font-weight-bold : 700;
+// more component variables
+$global-header-background: $optout-dark;
+$global-header-height: 50px;
+
+$global-sidebar-width: 200px;
+$global-sidebar-mini-width: 70px;
+$global-sidebar-bg: $grey-dark;
+$global-sidebar-bg-hover: rgba(255, 255, 255, 0.2);
+$global-sidebar-expand-bg: $white;
+$global-sidebar-expand-color: $dark-blue;
+$global-sidebar-color: $white;
+$global-sidebar-color-hover: $white;
+$global-sidebar-item-active-color: $blue;
+$global-sidebar-item-active-bg: $grey-xx-light;
+$global-sidebar-transition: .2s;
+$global-navs-color: $color-primary2;
+
+$global-table-primary-color: $optout-dark;
+$global-headings-color: $black;
+$global-top-header-color: $white;
+$global-top-page-header-hover-background: $grey-light;

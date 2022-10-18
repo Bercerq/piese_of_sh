@@ -1,0 +1,68 @@
+// Global Variables
+//------------------------------------------------------
+// color elements
+$white : #fff !default;
+$black : #231f20 !default;
+$transparent : transparent !default;
+$grey-xxx-light: #f7f7f7 !default;
+$grey-xx-light : #efefef !default;
+$grey-x-light : #eee;
+$grey-light : #ddd !default;
+$grey-medium: #ccc;
+$grey : #878787;
+$grey-dark : #575757;
+$petrol-light : #b9c4cf;
+$petrol : #b9c4cb;
+$deep-blue: #354052 !default;
+$dark-blue: rgb(35, 49, 104) !default;
+$blue-aqua : rgb(102, 175, 224) !default;
+$deep-pink : rgb(162, 0, 97) !default;
+$green: #86bc25 !default;
+$blue: rgb(40, 119, 188) !default;
+$orange: rgb(240, 135, 49) !default;
+$red: rgb(224, 48, 39) !default;
+$color-primary1 : $blue;
+$color-primary2 : $orange;
+$color-primary: $blue;
+$color-success : $green;
+$color-warning: $orange;
+$color-danger: $red;
+$color-link: $dark-blue;
+$color-fonts : $grey-dark;
+// fonts
+$font-stack: ('Lato', sans-serif) !default;
+$font-size-x-small : 0.75em;
+$font-size-small : 0.9em;
+$font-size-normal : 1em;
+$font-size-large : 1.25em;
+$font-size-x-large : 1.5em;
+$font-size-xx-large : 2em;
+$font-size-xxx-large : 3em;
+$font-weight-light : 400;
+$font-weight-normal : 400;
+$font-weight-medium : 700;
+$font-weight-bold : 700;
+// more component variables
+$global-header-background: $dark-blue;
+$global-header-height: 51px;
+
+$global-sidebar-width: 200px;
+$global-sidebar-mini-width: 70px;
+$global-sidebar-bg: $blue-aqua;
+$global-sidebar-bg-hover: $white;
+$global-sidebar-expand-bg: $white;
+$global-sidebar-expand-color: $dark-blue;
+$global-sidebar-color: $white;
+$global-sidebar-color-hover: $blue;
+$global-sidebar-item-active-color: $color-primary2;
+$global-sidebar-item-active-bg: $white;
+$global-sidebar-transition: .2s;
+$global-navs-color: $color-primary2;
+
+$global-table-primary-color: $blue;
+$global-headings-color: $dark-blue;
+$global-top-header-color:$white;
+$global-top-page-header-hover-background: $blue;
+
+
+

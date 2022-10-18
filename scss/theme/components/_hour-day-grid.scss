@@ -1,0 +1,55 @@
+.hrdaygrid {
+  user-select: none;
+  width: 100%;
+
+  td {
+    cursor: pointer;
+  }
+
+  td.cell {
+    background: rgba(204, 204, 204, 0.5);
+    border: 1px solid #fff;
+    text-align: center;
+  }
+
+  td.cell.selected {
+    background: rgba(204, 204, 204, 1);
+  }
+
+  td.cell.bid {
+    background: rgba(150, 191, 13, 0.7);
+  }
+
+  td.cell.bid.selected {
+    background: rgb(150, 191, 13);
+  }
+
+  td.day-col {
+    color: #999;
+    text-align: right;
+    padding: 0 4px;
+    width: 30px;
+  }
+
+  td.hour-row {
+    text-align: center;
+    color: #999;
+  }
+
+  td.hour-row.selected,
+  td.day-col.selected {
+    color: black;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.hrdaygrid-buttons {
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.hrdaygrid.disabled {
+  td.cell.bid {
+    background: rgba(150, 191, 13, 0.4);
+  }
+}

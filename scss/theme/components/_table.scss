@@ -1,0 +1,245 @@
+$cell-bg-color-odd : $grey-xxx-light;
+$cell-bg-color-even : $white;
+$cell-border : $grey-light;
+$cell-border-th-color : $global-table-primary-color;
+$cell-color-th : $global-table-primary-color;
+$cell-font-weight-th : $font-weight-normal;
+$search-font-weight: $font-weight-normal;
+$search-border-color: $grey-light;
+$search-color: $petrol-light;
+$table-hover-color : $grey-x-light !default;
+$table-selected-color : rgba($global-table-primary-color, 0.3) !default;
+
+.filter-label {
+  display: block;
+}
+
+.react-bootstrap-table-page-btns-ul {
+  float: right;
+}
+
+.react-bootstrap-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table input[type=checkbox] {
+  opacity: 1;
+  position: static;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: $cell-bg-color-odd;
+}
+
+.table-striped>tfoot>tr>td,
+.table-striped>tfoot>tr>th {
+  border-top: solid 1px $cell-border-th-color;
+  color: $cell-border-th-color;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: $cell-bg-color-odd;
+}
+
+.table-striped>tbody>tr.odd {
+  background-color: $cell-bg-color-odd !important;
+}
+
+.table-striped>tbody>tr.even {
+  background-color: $cell-bg-color-even !important;
+}
+
+.table-striped>thead>tr>th {
+  color: $cell-color-th;
+  font-weight: $cell-font-weight-th;
+  border-bottom: solid 2px $cell-color-th;
+  vertical-align: top;
+}
+
+.table-striped>thead>tr>th input {
+  font-weight: $cell-font-weight-th;
+}
+
+.table-striped>thead>tr>th select {
+  font-weight: $cell-font-weight-th;
+}
+
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
+  background-color: $table-hover-color;
+}
+
+.table-hover>tbody>tr.selected>td,
+.table-hover>tbody>tr.selected>th {
+  background-color: $table-selected-color;
+  cursor: pointer;
+  color: #fff;
+}
+
+.table {
+  border-bottom: solid 1px $cell-border;
+
+  td,
+  th {
+    padding: .5rem;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+}
+
+.react-bootstrap-table .table {
+  span.text-ellipsis {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.react-bs-table-sizePerPage-dropdown.show {
+  display: inline-block !important;
+}
+
+.react-bs-table-sizePerPage-dropdown {
+  button.dropdown-toggle {
+    margin-right: 10px;
+  }
+
+  li a {
+    display: block;
+    width: 100%;
+  }
+
+  li a:hover {
+    text-decoration: none;
+  }
+}
+
+.react-bootstrap-table th {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.react-bootstrap-table th:focus {
+  outline: 0;
+}
+
+.react-bootstrap-table th.sortable {
+  .fa {
+    float: right;
+    opacity: 0.5;
+    font-size: 1.5em;
+  }
+}
+
+.search-label-container {
+  float: right;
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: $search-color;
+  }
+}
+
+.search-label {
+  font-size: 0.9em;
+  font-weight: $search-font-weight;
+
+  input {
+    border: none;
+    height: 33px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 35px;
+    width: 175px !important;
+
+    &::placeholder {
+      font-size: 0.9em;
+      font-weight: $search-font-weight;
+    }
+  }
+}
+
+.segments-table {
+  .segment-active {
+    cursor: pointer;
+    margin-left: 40%;
+  }
+
+  .segment-code-btn {
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    font-size: 1.2em;
+  }
+}
+
+.table-collapse-header {
+  position: relative;
+  color: $grey-dark !important;
+  text-decoration: none !important;
+  float: left;
+  padding-bottom: 2px;
+
+  i {
+    font-size: 1.3em;
+    position: absolute;
+    top: 3px;
+  }
+
+  h3 {
+    margin-left: 25px;
+    margin-top: 0px;
+  }
+}
+
+.action-details-table {
+  margin-left: 58%;
+}
+
+.action-details-table tr {
+  background-color: transparent !important;
+}
+
+.action-details-table tr td {
+  vertical-align: top;
+  background-color: transparent !important;
+}
+
+.action-details-table tr td:first-child {
+  font-weight: bold;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.show-lessvalues {
+  float: right;
+}
+
+.morevalues {
+  display: none;
+}
+
+.text-rotate {
+  transform: rotate(-70deg);
+  width: 20px;
+  margin: 0px;
+  padding: 0px 3px;
+  white-space: nowrap;
+  word-break: break-all;
+  margin: auto;
+}
+
+.statistics-table>thead>tr>th {
+  height: 110px;
+  vertical-align: bottom;
+  border-top: none;
+}

@@ -1,0 +1,79 @@
+$login-background: $grey-xx-light;
+$login-form-border-color: $grey-x-light;
+$heading-color: #465860;
+$heading-font-weight: $font-weight-medium;
+$heading-span-font-weight: $font-weight-light;
+
+html {
+  height: 100%;
+}
+
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .form-control {
+    margin: 20px 0;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  & input[placeholder] {
+    text-align: center;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+.login-page {
+  background: $login-background;
+}
+
+.login-form {
+  padding: 30px 30px 10px 10px;
+  min-width: 300px;
+  margin-bottom: 10%;
+  border-radius: 4px;
+  width: 350px;
+
+  h2 {
+    font-family: "Roboto";
+    color: $heading-color;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: $heading-font-weight !important;
+    padding-bottom: 10px;
+  
+    img {
+      border: 0;
+      width: 1.5em;
+      vertical-align: bottom;
+      margin-right: 5px;
+    }
+  
+    span {
+      font-weight: $heading-span-font-weight;
+    }
+  }
+}
+
+.ortec-logo {
+  margin: 0 auto;
+  background: url('../images/theme-logos/optout-logo-login.png') no-repeat center;
+  background-size: 140px;
+  height: 120px;
+}
+
+.ortec-adscience-logo {
+  
+  height: 75px;
+  margin-left: 12px;
+  margin-top: 5px;
+}

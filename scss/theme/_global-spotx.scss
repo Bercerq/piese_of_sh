@@ -1,0 +1,77 @@
+// Global Variables
+//------------------------------------------------------
+
+// color elements
+$white: #fff !default;
+$black: #000 !default;
+$transparent: transparent !default;
+
+$grey-xxx-light: #f7f7f7 !default;
+$grey-xx-light: #efefef !default;
+$grey-x-light: #eee;
+$grey-light: #ddd !default;
+$grey-medium: #ccc;
+$grey: #808285;
+$grey-dark: #575757;
+
+
+$petrol-light: #b9c4cf;
+$petrol: #b9c4cb;
+
+$deep-blue: #354052 !default;
+$dark-blue: #1f4389 !default;
+$blue-aqua: #009bc2 !default;
+$deep-pink: #a81e73 !default;
+$green: #74a363 !default;
+$deep-green: #74a363 !default;
+$blue: #0076ba !default;
+$orange: #ee7d0c !default;
+$red: #d9534f !default;
+
+$color-primary1: #1b9dd0;
+$color-primary2: #8ec641;
+$color-primary: $color-primary1;
+$color-success: $green;
+$color-warning: $orange;
+$color-danger: $red;
+$color-link: $dark-blue;
+$color-fonts: $grey-dark;
+
+// fonts
+$font-stack: ('Roboto', 'Helvetica', 'Arial', sans-serif) !default;
+$font-size-x-small: 0.75em;
+$font-size-small: 0.9em;
+$font-size-normal: 1em;
+$font-size-large: 1.25em;
+$font-size-x-large: 1.5em;
+$font-size-xx-large: 2em;
+$font-size-xxx-large: 3em;
+
+$font-weight-light : 300;
+$font-weight-normal : 400;
+$font-weight-medium : 500;
+$font-weight-bold : 700;
+
+$global-header-background: $white;
+$global-header-height: 50px;
+
+$global-sidebar-width: 200px;
+$global-sidebar-mini-width: 70px;
+$global-sidebar-bg: $deep-blue;
+$global-sidebar-bg-hover: rgba(255, 255, 255, 0.2);
+$global-sidebar-expand-bg: rgba(255, 255, 255, 0.2);
+$global-sidebar-expand-color: $white;
+$global-sidebar-color: $white;
+$global-sidebar-color-hover: $white;
+$global-sidebar-item-active-color: $deep-green;
+$global-sidebar-item-active-bg: $grey-xx-light;
+$global-sidebar-transition: .2s;
+$global-navs-color: $deep-green;
+
+$global-table-primary-color: $color-primary1;
+$global-headings-color: $grey;
+$global-top-header-color: $grey;
+$global-top-page-header-hover-background: $grey-light;
+
+
+

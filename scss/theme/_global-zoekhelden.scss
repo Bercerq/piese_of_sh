@@ -1,0 +1,65 @@
+// Global Variables
+//------------------------------------------------------
+// color elements
+$white : #fff !default;
+$black : #0a1e28 !default;
+$transparent : transparent !default;
+$grey-xxx-light: #f7f7f7 !default;
+$grey-xx-light : #efefef !default;
+$grey-x-light : #eee;
+$grey-light : #ddd !default;
+$grey-medium: #c9ced2;
+$grey : #878787;
+$grey-dark : #575757;
+$petrol-light : #b9c4cf;
+$petrol : #b9c4cb;
+$dark-blue: #000099 !default;
+$blue-green : #00bea0 !default;
+$purple : #8200be !default;
+$green: #00b300 !default;
+$electric-blue: #4646ff !default;
+$blue: #4646ff !default;
+$orange: #ffa346 !default;
+$red: #ff4646 !default;
+$color-primary1 : $electric-blue;
+$color-primary2 : $purple;
+$color-primary: $blue;
+$color-success : $green;
+$color-warning: $orange;
+$color-danger: $red;
+$color-link: $dark-blue;
+$color-fonts : $grey-dark;
+// fonts
+$font-stack: ('Montserrat', sans-serif) !default;
+$font-size-x-small : 0.75em;
+$font-size-small : 0.9em;
+$font-size-normal : 1em;
+$font-size-large : 1.25em;
+$font-size-x-large : 1.5em;
+$font-size-xx-large : 2em;
+$font-size-xxx-large : 3em;
+$font-weight-light : 300;
+$font-weight-normal : 400;
+$font-weight-medium : 500;
+$font-weight-bold : 700;
+// more component variables
+$global-header-background: $black;
+$global-header-height: 51px;
+
+$global-sidebar-width: 200px;
+$global-sidebar-mini-width: 70px;
+$global-sidebar-bg: $blue-green;
+$global-sidebar-bg-hover: $white;
+$global-sidebar-expand-bg: $white;
+$global-sidebar-expand-color: $blue;
+$global-sidebar-color: $white;
+$global-sidebar-color-hover: $black;
+$global-sidebar-item-active-color: $color-primary2;
+$global-sidebar-item-active-bg: $white;
+$global-sidebar-transition: .2s;
+$global-navs-color: $color-primary2;
+
+$global-table-primary-color: $purple;
+$global-headings-color: $black;
+$global-top-header-color:$white;
+$global-top-page-header-hover-background: lighten($black, 15%);

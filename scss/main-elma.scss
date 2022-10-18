@@ -1,0 +1,29 @@
+@import 
+'theme/global-elma',
+'theme/global-components';
+
+.adscience-logo-container {
+  display: none;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo-container {
+  display: block;
+}
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/Elma-logo-combined.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 130px;
+    vertical-align: top;
+}
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}

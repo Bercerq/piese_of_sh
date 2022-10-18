@@ -1,0 +1,94 @@
+// Variables
+//------------------------------------------------------
+$block1-stroke-color: $color-primary1;
+$block1-text-color:   $color-primary1;
+$block2-stroke-color: $grey-dark;
+$block2-text-color:   $grey-dark;
+$block3-stroke-color: $color-primary2;
+$block3-text-color:   $color-primary2;
+$block4-stroke-color: $green;
+$block4-text-color:   $green;
+$block5-stroke-color: #c7c7c7;
+$block5-text-color:   #c7c7c7;
+
+$text-size:           $font-size-normal;
+$text-weight:         $font-weight-bold;
+
+.funnel {
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.funnel path {
+  fill: $white;
+}
+
+.funnel text {
+  font-size: $text-size;
+
+  tspan:nth-child(1) {
+    font-weight: $text-weight;
+  }
+}
+
+.funnel g:nth-child(1) {
+  path {
+    stroke: $block1-stroke-color;
+    transform-origin: 50% 0%;
+  }
+
+  text {
+    fill: $block1-text-color;
+  }
+}
+
+.funnel g:nth-child(2) {
+  path {
+    stroke: $block2-stroke-color;
+    transform-origin: 50% 25%;
+  }
+
+  text {
+    fill: $block2-text-color;
+  }
+}
+
+.funnel g:nth-child(3) {
+  path {
+    stroke: $block3-stroke-color;
+    transform-origin: 50% 50%;
+  }
+
+  text {
+    fill: $block3-text-color;
+  }
+}
+
+.funnel g:nth-child(4) {
+  path {
+    stroke: $block4-stroke-color;
+    transform-origin: 50% 75%;
+  }
+
+  text {
+    fill: $block4-text-color;
+  }
+}
+
+.funnel g:nth-child(5) {
+  path {
+    stroke: $block5-stroke-color;
+    transform-origin: 50% 100%;
+  }
+
+  text {
+    fill: $block5-text-color;
+  }
+}
+
+// scaling paths to leave the space between
+.funnel path {
+  transform: scale(0.9);
+}

@@ -1,0 +1,84 @@
+$header-background: $global-header-background;
+$header-height: $global-header-height;
+$header-color: $global-top-header-color;
+
+.header {
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  line-height: $header-height;
+  width: 100%;
+  background: $header-background;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.24);
+  z-index: 1001;
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-logo-container {
+  display: none;
+}
+
+.adscience-logo-container {
+  .ortec-logo {
+    margin-top: 7px;
+    margin-left: 10px;
+    background: url('../images/ortec-logos/orteclogo.svg') no-repeat;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+  }
+
+  .adscience-logo {
+    background: url('../images/ortec-logos/ORTEC_AdScience_logo_white_small.png') no-repeat;
+    display: inline-block;
+    width: 230px;
+    height: 28px;
+    background-size: 100%;
+    margin-left: 10px;
+  }
+}
+
+.kb-link, .kb-link:hover {
+  color: $header-color;
+  font-size: 1.7em;
+  margin: 0 5px;
+  height: $header-height;
+
+  i {
+    margin-top: 15px;
+  }
+}
+
+.header-search-container {
+  width: 300px;
+  margin-right: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .adscience-logo-container {
+    .ortec-logo {
+      margin-top: 7px;
+      margin-left: 10px;
+      background: url('../images/ortec-logos/orteclogo.svg') no-repeat;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background-size: 100%;
+    }
+  
+    .adscience-logo {
+      background: url('../images/ortec-logos/ORTEC_AdScience_logo_white_small.png') no-repeat;
+      display: inline-block;
+      width: 150px;
+      height: 25px;
+      background-size: 100%;
+      margin-left: 10px;
+    }
+  }
+
+  .header-search-container {
+    width: 150px;
+  }
+}

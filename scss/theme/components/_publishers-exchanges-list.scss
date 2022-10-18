@@ -1,0 +1,29 @@
+.publishers-exchanges-list {
+  .checkbox {
+    display: inline-block;
+    width: 49%;
+    margin: 10px 0;
+    padding: 0;
+    vertical-align: top;
+
+    img {
+      max-height: 40px;
+      padding-left: 10px;
+    }
+
+    input[type="checkbox"]+span:after {
+      top: 7px;
+    }
+  }
+
+  .select-all label {
+    padding-top: 5px;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width:540px) {
+  .publishers-exchanges-list .checkbox {
+    width: 100%;
+  }
+}

@@ -1,0 +1,192 @@
+$table-btn-color: $petrol;
+$table-hover-btn-color: $global-headings-color;
+
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.loading {
+  background: url(/images/loading.svg) no-repeat 50% 50%;
+  background-size: 60px;
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+.loading-input {
+  background: url(/images/loading-input.svg) no-repeat 50% 50%;
+  background-size: 50px;
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
+.page-loading {
+  background: url(/images/loading.svg) no-repeat 50% 50%;
+  background-size: 60px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.card {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  background: $white;
+  border-radius: 2px;
+  padding: 10px;
+  border: none;
+  display: block;
+  margin-right: 10px;
+}
+
+.gray-box {
+  background-color: $grey-xx-light;
+  padding: 10px 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-height: 40px;
+  transition: background-color 0.5s ease;
+}
+
+.highlight-box {
+  background-color: $grey-medium;
+  transition: background-color 0.5s ease;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, $grey 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 0.5s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
+}
+
+.table-btn {
+  color: $table-btn-color;
+  font-size: 1.2em;
+}
+
+.table-btn:hover {
+  color: $table-hover-btn-color;
+}
+
+.table-btn-lg {
+  color: $table-btn-color;
+  font-size: 1.4em;
+}
+
+.table-btn-lg:hover {
+  color: $table-hover-btn-color;
+}
+
+.table-btn-container {
+  position: absolute;
+  right: 200px;
+
+  .dropdown {
+    display: inline-block;
+  }
+}
+
+.table-btn-container.statistics {
+  right: 0px;
+
+  .search-label-container {
+    float: none;
+  }
+}
+
+.collapse-header {
+  position: relative;
+  color: $grey-dark !important;
+  text-decoration: none !important;
+  padding-bottom: 2px;
+
+  i {
+    font-size: 1.1em;
+    position: absolute;
+  }
+
+  h5 {
+    margin-left: 20px;
+    margin-top: 0px;
+  }  
+}
+
+.circle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.blue {
+  background-color: $color-primary1;
+}
+
+.red {
+  background-color: $red;
+}
+
+.green {
+  background-color: $green;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+$widthamounts:(50, 100, 150, 200, 300);
+
+@mixin generate-widths() {
+  @each $width in $widthamounts {
+    .width-#{$width} {
+      width: #{$width}px !important;
+    }
+  }
+}
+
+@include generate-widths();
+
+$heightamounts:(40, 560);
+
+@mixin generate-heights() {
+  @each $height in $heightamounts {
+    .height-#{$height} {
+      height: #{$height}px !important;
+    }
+  }
+}
+
+@include generate-heights();

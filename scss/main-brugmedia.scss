@@ -1,0 +1,65 @@
+@import 
+'theme/global-brugmedia',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo {
+  margin: 0px;
+  background: url('../images/theme-logos/brugmedia-logo-combined.png') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 150px;
+  height: 37px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.header {
+  border-bottom: solid 2px #d03f3a;
+  box-shadow: none;
+}
+.sidebar .nav-link.active, .sidebar .nav-link.active:hover {
+  color: #d03f3a !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #d03f3a
+}
+.sidebar .menu-item-badge {
+  background: #d03f3a;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+
+  .nav-link.active, .nav-link.active:hover {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+  }
+}
+
+.sidebar.mini {
+  .nav-link.active i {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+    transition: .4s;
+  }
+}
+
+.user-menu {
+  height: 48px;
+}

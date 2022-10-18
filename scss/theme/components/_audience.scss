@@ -1,0 +1,26 @@
+
+.audience-poweredby {
+  display:table-cell;
+  font-size:1.2em;
+  padding-bottom:7px;
+  height: 61px;
+  vertical-align: bottom;
+}
+
+.audience-logo {
+  display:table-cell;
+}
+
+
+.graph-png-container {
+  position: absolute;
+  opacity: 0;
+
+  .c3-legend-item {
+    font-size: 30px;
+  }
+
+  .mosaic-bubble {
+    border:solid 1px $grey-light;
+  }
+}

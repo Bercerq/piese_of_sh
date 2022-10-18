@@ -1,0 +1,221 @@
+$sidebar-top-position: $global-header-height;
+$sidebar-width: $global-sidebar-width;
+$sidebar-mini-width: $global-sidebar-mini-width;
+$sidebar-transition: $global-sidebar-transition;
+$sidebar-expand-bg: $global-sidebar-expand-bg;
+$sidebar-expand-color: $global-sidebar-expand-color;
+$sidebar-color: $global-sidebar-color;
+$sidebar-font-weight: $font-weight-medium;
+$sidebar-item-height: 42px;
+$sidebar-item-active-color: $global-sidebar-item-active-color;
+$sidebar-item-active-bg: $global-sidebar-item-active-bg;
+$sidebar-bg: $global-sidebar-bg;
+$sidebar-color-hover: $global-sidebar-color-hover;
+$sidebar-bg-hover: $global-sidebar-bg-hover;
+$navbar-toggle-bg: $color-primary2;
+$navbar-toggle-color: $white;
+$collapsed-menu-height: 50px;
+
+.sidebar {
+  position: fixed;
+  z-index: 10;
+  top: $sidebar-top-position;
+  background: $sidebar-bg;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  transition: width ease-out $sidebar-transition;
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    padding: 0 !important;
+    height: $sidebar-item-height;
+    color: $sidebar-color !important;
+    font-weight: $sidebar-font-weight;
+    transition: all ease-out $sidebar-transition;
+
+    i {
+      width: $sidebar-mini-width;
+      height: $sidebar-item-height;
+      line-height: $sidebar-item-height;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+
+  .nav-link:hover {
+    background-color: $sidebar-bg-hover !important;
+    color: $sidebar-color-hover !important;
+  }
+
+  .nav-link.active,
+  .nav-link.active:hover {
+    color: $sidebar-item-active-color !important;
+    background-color: $sidebar-item-active-bg !important;
+
+    .menu-item-report-templates {
+      color: $sidebar-item-active-color !important;
+    }
+  }
+
+  .menu-item-badge {
+    position: absolute;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 20px;
+    top: 2px;
+    left: 40px;
+    background: $sidebar-item-active-color;
+    color: $sidebar-item-active-bg;
+  }
+
+  .menu-item-report-templates {
+    position: absolute;
+    left: 29px;
+    top: 13px;
+    font-family: "Times New Roman";
+    font-weight: $sidebar-font-weight;
+    color: $sidebar-color !important;
+  }
+
+  .theme-adsciencelogo-container {
+    .ortec-logo {
+      display: block;
+      background: url(../images/ortec-logos/orteclogo.svg) no-repeat center;
+      width: 30px;
+      height: 30px;
+      background-size: 100%;
+      margin: 0 auto;
+    }
+
+    .adscience-logo {
+      display: block;
+      background: url(../images/ortec-logos/ORTEC_AdScience_logo_small.png) no-repeat center;
+      width: 150px;
+      height: 50px;
+      background-size: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    left: 0;
+    width: $sidebar-width;
+    height: 100%;
+    padding-top: 15px;
+    cursor: pointer;
+
+    .navbar {
+      padding: 0;
+      width: inherit;
+      height: inherit;
+      display: block;
+    }
+
+    .navbar>.theme-adsciencelogo-container {
+      position: absolute;
+      bottom: 90px;
+      width: inherit;
+      text-align: center;
+    }
+
+    .navbar-collapse {
+      .theme-adsciencelogo-container {
+        display: none;
+      }
+    }
+
+    .navbar-nav {
+      display: block;
+    }
+
+    .nav-link {
+      width: $sidebar-width;
+    }
+  }
+
+  .sidebar.mini {
+    width: $sidebar-mini-width;
+
+    .theme-adsciencelogo-container {
+      .ortec-logo {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .adscience-logo {
+        display: none;
+      }
+    }
+
+    .nav-link {
+      width: $sidebar-mini-width;
+      overflow: hidden;
+    }
+  }
+
+  .sidebar-expand {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    height: 30px;
+    font-size: 1.5em;
+    background: $sidebar-expand-bg;
+    color: $sidebar-expand-color;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+//bootstrap lg breakpoint
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    min-height: $collapsed-menu-height;
+    margin-top: $sidebar-top-position;
+
+    .navbar-nav {
+      margin-top: 10px;
+    }
+
+    .navbar-toggler {
+      background: $navbar-toggle-bg;
+      padding: .45rem .75rem;
+      outline: 0;
+
+      i {
+        color: $navbar-toggle-color;
+      }
+    }
+
+    .navbar-collapse>.theme-adsciencelogo-container {
+      display: none;
+    }
+
+    .navbar>.theme-adsciencelogo-container {
+      .ortec-logo {
+        display: inline-block;
+        height: 30px;
+      }
+
+      .adscience-logo {
+        display: inline-block;
+        width: 200px;
+        margin-left: 10px;
+        height: 30px;
+      }
+    }
+  }
+
+  .sidebar-expand {
+    display: none;
+  }
+}

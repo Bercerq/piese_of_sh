@@ -1,0 +1,33 @@
+$drop-area-border-color: $grey;
+$drop-area-dragover-bg-color: $grey-xx-light;
+$drop-area-dragover-color: $grey;
+
+.drop-area {
+  width: 100%;
+  height: 120px;
+  border: dashed 1px $drop-area-border-color;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 30px;
+
+  i {
+    font-size: 2em;
+  }
+
+  div {
+    padding-top: 10px;
+  }
+
+  .loading {
+    height: 60px;
+  }
+}
+
+.drop-area.is-dragover {
+  background: $drop-area-dragover-bg-color;
+  border: solid 1px $drop-area-border-color;
+  color: $drop-area-dragover-color;
+  i {
+    color: $drop-area-dragover-color;
+  }
+}

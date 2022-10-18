@@ -1,0 +1,50 @@
+$body-bg-color: $grey-xxx-light;
+$body-txt-color: $color-fonts;
+$body-font-weight: $font-weight-light;
+$heading-font-weight: $font-weight-light;
+$heading-color: $global-headings-color;
+$button-font-weight: $font-weight-medium;
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: $body-bg-color;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  font-size: 14px;
+  color: $body-txt-color;
+  font-weight: $body-font-weight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: $heading-color;
+  font-weight: $heading-font-weight;
+  line-height: 1.1;
+  margin: 5px 0;
+}
+
+th {
+  font-weight: $heading-font-weight;
+}
+
+a:focus {
+  outline: none;
+}
+
+.btn {
+  font-weight: $button-font-weight;
+}

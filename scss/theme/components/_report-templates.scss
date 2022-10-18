@@ -1,0 +1,19 @@
+$template-sep-color: $grey-light;
+$template-bg-color: rgba(0,0,0,.05);
+
+.template-tab-row {
+  background: $template-bg-color;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding-top: 10px;
+  border-bottom: solid 1px $template-sep-color;
+}
+
+.template-figure-row {
+  position: relative;
+  border-bottom: solid 1px $template-sep-color;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 10px;
+}

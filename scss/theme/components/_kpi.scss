@@ -1,0 +1,15 @@
+.kpi-container {
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.kpi {
+  h3 {
+    color: $color-primary2 !important;
+  }
+
+  span {
+    color: $grey-dark;
+    font-size: 0.9em;
+  }
+}

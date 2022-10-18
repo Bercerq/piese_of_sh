@@ -1,0 +1,112 @@
+$alerts-list-badge-font-size: $font-size-x-small;
+$alerts-list-toggle-color: $global-top-header-color;
+$alerts-list-toggle-height: $global-header-height;
+$alerts-list-icon-font-weight: $font-weight-bold;
+$alerts-list-border-color: $grey-medium;
+$alerts-list-link-color: $global-headings-color;
+$alerts-list-link-hover-color: $grey-xxx-light;
+$alerts-list-warning-color: $color-warning;
+$alerts-list-danger-color: $color-danger;
+$alerts-list-name-font-weight: $font-weight-medium;
+
+.alerts-list-popover {
+  max-width: 900px;
+  font-size: inherit;
+  border: solid 1px $alerts-list-border-color;
+  box-shadow: 0 3px 6px rgba(66, 64, 64, 0.2);
+  border-radius: 0;
+
+  .popover-body {
+    padding: 0;
+  }
+
+  .alerts-list-header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: solid 1px $alerts-list-border-color;
+  }
+}
+
+.alerts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    line-height: 20px;
+    border-bottom: solid 1px $alerts-list-border-color;
+
+    a {
+      padding: 10px;
+      border-left: solid 3px;
+      margin: 2px;
+      color: $alerts-list-link-color;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      background-color: $alerts-list-link-hover-color;
+    }
+
+    .alert-list-name {
+      font-weight: $alerts-list-name-font-weight;
+    }
+  }
+
+  .alert-list-row-danger {
+    a {
+      border-color: $alerts-list-danger-color;
+    }
+
+    .alert-list-name {
+      color: $alerts-list-danger-color;
+    }
+  }
+
+  .alert-list-row-warning {
+    a {
+      border-color: $alerts-list-warning-color;
+    }
+
+    .alert-list-name {
+      color: $alerts-list-warning-color;
+    }
+  }
+}
+
+.alerts-list-toggle {
+  position: relative;
+  width: 30px;
+  height: $alerts-list-toggle-height;
+  color: $alerts-list-toggle-color;
+  margin: 0 5px;
+  padding-left: 3px;
+  cursor: pointer;
+
+  .alerts-list-badge {
+    position: absolute;
+    color: $white;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: $alerts-list-badge-font-size;
+    text-align: center;
+    line-height: 20px;
+    top: 5px;
+    left: 10px;
+  }
+
+  i {
+    position: absolute;
+    top: 15px;
+    font-size: 1.7em;
+    font-weight: $alerts-list-icon-font-weight;
+  }
+}
+
+.alerts-list-noresults {
+  padding: 15px;
+}

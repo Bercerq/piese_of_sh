@@ -1,0 +1,45 @@
+@import 
+'theme/global-mod',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0;
+  background: url(../images/theme-logos/mijn-online-domein.png) no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-left: 10px;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+
+  .nav-link.active, .nav-link.active:hover {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+  }
+}
+
+.sidebar.mini {
+  .nav-link.active i {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+    transition: .4s;
+  }
+}

@@ -1,0 +1,47 @@
+@import 
+'theme/global-eleven',
+'theme/global-components';
+
+.adscience-logo-container {
+  display: none;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo-container {
+  display: block;
+}
+body {
+  background-color: #f2f5f6;
+}
+.page-header {
+  background-color: #f2f5f6;
+}
+.theme-logo::before {
+  font-family: "FontAwesome"; 
+  content: "\f015";
+  color: #fc4030;
+  position: relative;
+  font-size: 30px;
+  left: -60px;
+  top: -12px;
+}
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/eleven-logo.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 280px;
+    margin-left: 80px;
+    margin-top: 12px;
+    vertical-align: middle;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}

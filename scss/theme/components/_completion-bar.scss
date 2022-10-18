@@ -1,0 +1,92 @@
+// Variables
+//------------------------------------------------------
+$completionbar-arrow-color:  $dark-blue;
+
+.completion-bar-container {
+  position: relative;
+  height: 25px;
+  min-width: 70px;
+}
+
+.completion-bar {
+  width:100%;
+  position: absolute;
+  height: 20px;
+}
+
+.completion-bar.blue {
+  background-color: rgba($color-primary1, 0.4);
+}
+
+.completion-bar.red {
+  background-color: rgba($red, 0.4);
+}
+
+.completion-bar.green {
+  background-color: rgba($green, 0.4);
+}
+
+.completion-bar.orange {
+  background-color: rgba($orange, 0.4);
+}
+
+.completion-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.completion-value {
+  position: absolute;
+  left: 5px;
+  color: $white;
+}
+
+.completion-arrow {
+  position: absolute;
+  top:15px;
+  margin-left: -4px;
+  color: $completionbar-arrow-color;
+  font-size: 14px;
+}
+
+.completion-line {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  height: 25px;
+  background: transparent;
+  border-right: dotted 2px $completionbar-arrow-color;
+}
+
+.pacing-predictions {
+  min-height: auto !important;
+  margin-top: 5px;
+}
+
+.campaign-pacing-area {
+  width: 100%;
+  display: inline-block;
+
+  .completion-bar-container {
+    height: 30px;
+    margin-top: 12px;
+  }
+
+  .completion-bar {
+    height: 25px;
+  }
+
+  .completion-line {
+    height: 30px;
+  }
+
+  .completion-value {
+    top: 2px;
+  }
+
+  .completion-arrow {
+    top: 20px;
+  }
+}

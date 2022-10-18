@@ -1,0 +1,22 @@
+@import 
+'theme/global-toc',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0 17px;
+  background: url('../images/theme-logos/toc-logo.png') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 175px;
+  height: 23px;
+  vertical-align: middle;
+}

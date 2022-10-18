@@ -1,0 +1,84 @@
+$navtabs-border-color: $grey-light;
+$navtabs-tab-color: $grey-dark;
+$navtabs-activetab-color: $global-navs-color;
+$navtabs-activetab-background: $grey-xxx-light;
+$navtabs-activetab-weight: $font-weight-medium;
+$navtabs-hover-bgcolor: $grey-x-light;
+$navtabs-danger-color: $color-danger;
+
+.nav-tabs {
+
+  .nav-link {
+    color: $navtabs-tab-color;
+    border-radius: 0;
+    border: solid 1px $navtabs-border-color;
+    border-left: none;
+    line-height: 25px;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    border: solid 1px $navtabs-border-color;
+    border-left: none;
+    background-color: $navtabs-activetab-background;
+  }
+
+  .nav-link.active {
+    color: $navtabs-activetab-color;
+    background-color: $navtabs-activetab-background;
+    border-top-color: $navtabs-activetab-color;
+    border-bottom-color: $navtabs-activetab-background;
+    border-left: none;
+    font-weight: $navtabs-activetab-weight;
+  }
+
+  .nav-link.nav-link-danger {
+    color: $navtabs-danger-color !important;
+  }
+
+  .nav-link.nav-link-danger.active {
+    color: $navtabs-danger-color !important;
+    border-top-color: $navtabs-danger-color !important;
+    border-bottom-color: $navtabs-activetab-background;
+  }
+}
+
+.draggable-tabs {
+
+  li[role="tab"] {
+    color: $navtabs-tab-color;
+    border-radius: 0;
+    border: solid 1px $navtabs-border-color;
+    margin-right: 0;
+    border-left: none;
+  }
+
+  li[role="tab"][aria-selected="true"] {
+    color: $navtabs-activetab-color;
+    background: $navtabs-activetab-background;
+    border-top-color: $navtabs-activetab-color;
+    border-left: none;
+    border-bottom-color: transparent;
+    font-weight: $navtabs-activetab-weight;
+    display: inline-block;
+  }
+
+  li[role="tab"]:first-child {
+    border-left: 1px solid $navtabs-border-color;
+  }
+
+  li[role="tab"]:hover {
+    cursor: move;
+    background-color: $navtabs-hover-bgcolor;
+  }
+
+  div[role="tabpanel"] {
+    padding: 0;
+  }
+}
+
+.draggable-tabs.readonly {
+  li[role="tab"]:hover {
+    cursor: pointer;
+  }
+}

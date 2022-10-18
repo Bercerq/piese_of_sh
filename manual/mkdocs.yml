@@ -1,0 +1,39 @@
+site_name: ORTEC | adscience
+nav: 
+  - Introduction: index.md
+  - Getting started:
+    - Setting up an advertiser: getting-started/setup-advertiser.md
+    - Uploading an ad: getting-started/upload-ad.md
+    - Setting up a campaign: getting-started/setup-campaign.md
+  - Getting further:
+    - Working with the dashboard: getting-further/dashboard.md
+    - Monitoring campaigns: getting-further/campaigns.md
+    - Why is my campaign not running?: getting-further/campaign-not-running.md
+  - Getting ahead:
+    - Substrategies and AB testing: getting-ahead/substrategies.md
+    - Advanced substrategy ideas: getting-ahead/advanced-substrategies.md
+    - Retail: getting-ahead/retail.md
+  - Campaign settings: 
+    - Introduction: campaign-settings/introduction.md
+    - General settings: campaign-settings/general.md
+    - Retail: campaign-settings/retail.md
+    - Targeting: campaign-settings/targeting.md
+    - Inventory: campaign-settings/inventory.md
+    - Ads: campaign-settings/ads.md
+    - Segments: campaign-settings/segments.md
+    - Advanced rules: campaign-settings/advanced-rules.md
+    - Sub-strategies: campaign-settings/substrategies.md
+  - Ad vault: advault.md
+  - Deals: deals.md
+  - Lists: lists.md
+  - Segments and retargeting: segments.md
+  - User management: users.md
+  - Publishers: publishers/publishers.md
+theme:
+  name: material
+  favicon: img/favicon.ico
+  logo: img/orteclogo.svg
+extra_css:
+  - css/extra.css
+markdown_extensions:
+  - admonition

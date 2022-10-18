@@ -1,0 +1,38 @@
+$popover-txt-color: $color-fonts;
+
+.popover {
+  color: $popover-txt-color;
+  font-family: $font-stack !important;
+  font-size: $font-size-normal !important;
+}
+
+.popover-body {
+  color: $popover-txt-color;
+  
+  td {
+    vertical-align: top;
+  }
+
+  .popover-status {
+    white-space: nowrap !important;
+    text-align: right;
+  }
+
+  .popover-list {
+    white-space: normal !important;
+    padding-left: 5px;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        border-bottom: solid 1px $grey-light;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

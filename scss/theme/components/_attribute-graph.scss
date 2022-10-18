@@ -1,0 +1,21 @@
+.attribute-graph-settings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.attribute-list {
+  height: 300px;
+  overflow: auto;
+
+  .table {
+    border-bottom: none;
+  }
+}
+
+.attribute-list.png {
+  width: 700px;
+  height: auto;
+  overflow: visible;
+  font-size: 30px;
+}

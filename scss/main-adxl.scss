@@ -1,0 +1,46 @@
+@import 
+'theme/global-adxl',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0 30px;
+  background: url('../images/theme-logos/adxl-logo-white.png') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 150px;
+  height: 37px;
+  vertical-align: middle;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+
+  .nav-link.active,
+  .nav-link.active:hover {
+    box-shadow: inset -1px 0 0 0 $color-primary2;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar.mini {
+    .nav-link.active i {
+      box-shadow: inset -1px 0 0 0 $color-primary2;
+      transition: .4s;
+    }
+  }
+}

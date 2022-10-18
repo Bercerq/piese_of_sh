@@ -1,0 +1,33 @@
+$strategy-header-bg-color: rgba(0, 0, 0, .05);
+$strategy-rule-border-color: $grey-light;
+$strategy-list-icon-color: $color-primary2;
+
+.strategy {
+  .card {
+    padding: 0;
+  }
+
+  .card-header {
+    padding: 10px;
+    background: $strategy-header-bg-color;
+    border-bottom: solid 1px $strategy-rule-border-color;
+  }
+
+  .card-body {
+    margin-right: -8px;
+    margin-left: -8px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+}
+
+.strategy-rule {
+  border-bottom: solid 1px $strategy-rule-border-color;
+  padding: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .form-label i {
+    color: $strategy-list-icon-color;
+  }
+}

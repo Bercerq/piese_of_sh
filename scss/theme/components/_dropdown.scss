@@ -1,0 +1,57 @@
+$user-profile-hover-color: $global-top-page-header-hover-background;
+$user-menu-height: $global-header-height;
+$dropdown-toggle-color: $global-top-header-color;
+$dropdown-toggle-font-weight: $font-weight-normal;
+$dropdown-toggle-font-size: 1.1em;
+$dropdown-item-active-color: $white;
+$dropdown-item-active-background: $color-primary2;
+
+.dropdown-menu {
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 0;
+  border: none;
+}
+
+.user-menu {
+  height: $user-menu-height;
+  padding: 0 15px;
+  margin-right: 15px;
+  
+  .dropdown-item {
+    text-transform: capitalize;
+    line-height: 25px;
+
+    i {
+      width: 15px;
+      text-align: left;
+    }
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: $dropdown-item-active-color;
+    background: $dropdown-item-active-background;
+  }
+
+  .dropdown-toggle {
+    color: $dropdown-toggle-color;
+    font-weight: $dropdown-toggle-font-weight;
+    font-size: $dropdown-toggle-font-size;
+    text-decoration: none;
+  }
+
+  .dropdown-toggle::after {
+    vertical-align: middle;
+  }
+
+  .user-image {
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+.user-menu:hover,
+.user-menu.show {
+  background-color: $user-profile-hover-color;
+}

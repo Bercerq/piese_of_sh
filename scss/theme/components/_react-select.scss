@@ -1,0 +1,115 @@
+$select-border-color: $color-primary2;
+$select-bg-color:  $grey-xxx-light;
+$select-selected-bg-color: $color-primary2;
+$select-selected-color: $white;
+$select-focused-bg-color: $grey-xx-light;
+$select-group-heading-color: $global-headings-color;
+$select-group-heading-font-weight: $font-weight-medium;
+$select-group-heading-font-size: $font-size-normal;
+$select-remove-color: $color-primary2;
+.react-select-container {
+  border: none !important;
+  //border-bottom: solid 1px $select-border-color !important;
+  min-height: 32px !important;
+}
+
+.react-select-container.multiple {
+  height: auto !important;
+}
+
+.react-select__group-heading {
+  font-weight: $select-group-heading-font-weight !important;
+  color: $select-group-heading-color !important;
+  font-size: $select-group-heading-font-size !important;
+  text-transform: none !important;
+}
+
+.react-select__control {
+  border: none !important;
+  min-height: 32px !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  background: no-repeat bottom, 50% calc(100% - 1px);
+  background-size: 0 100%, 100% 100%;
+  transition: background 0s ease-out;
+  background-image: linear-gradient(0deg, $select-border-color 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, $select-bg-color 0);
+  max-height: 130px;
+  overflow: auto !important;
+}
+
+.react-select__control--is-focused {
+  border: none !important;
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: .3s;
+  box-shadow: none !important;
+}
+
+.react-select__indicator-separator {
+  display: none !important;
+}
+
+.react-select__option {
+  padding-left: 20px !important;
+}
+
+.react-select__option--is-focused {
+  background-color: $select-focused-bg-color !important;
+  cursor: pointer !important;
+}
+
+.react-select__option--is-selected {
+  background-color: $select-selected-bg-color !important;
+  color: $select-selected-color !important;
+}
+
+.react-select__indicators {
+  align-items: start !important;
+}
+
+.react-select__indicator {
+  padding: 6px !important;
+}
+
+.react-select__value-container {
+  height: 32px !important;
+}
+
+.react-select__value-container--is-multi {
+  height: auto !important;
+}
+
+.react-select__multi-value {
+  border-radius: 15px !important;
+}
+
+.bordered .react-select__multi-value {
+  border: 1px solid #aaa;
+}
+
+.react-select__multi-value__remove {
+  color: $select-remove-color !important;
+  background: transparent !important;
+  padding: 0 4px 0 2px !important;
+  cursor: pointer !important;
+}
+
+.react-select__multi-value__remove:hover {
+  color: $select-remove-color !important;
+  background: transparent !important;
+  opacity: 0.7 !important;
+}
+
+.react-select__multi-value__label {
+  font-size: 1em !important;
+  padding: 0 2px 0 6px !important;
+}
+
+.react-select__menu {
+  top: auto !important;
+}
+
+.react-select__placeholder {
+  white-space: nowrap;
+}

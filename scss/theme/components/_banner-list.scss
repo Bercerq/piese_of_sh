@@ -1,0 +1,13 @@
+.banner-list {
+  border-bottom: none;
+  border-right: none;
+  margin-bottom: 1px;
+
+  .nav-link {
+      cursor: pointer;
+
+      span {
+        padding: 10px 5px;
+      }
+  }
+}

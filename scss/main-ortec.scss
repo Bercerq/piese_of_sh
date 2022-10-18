@@ -1,0 +1,15 @@
+@import 
+'theme/global',
+'theme/global-components';
+
+.theme-adsciencelogo-container {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}

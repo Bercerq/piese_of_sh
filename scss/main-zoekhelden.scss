@@ -1,0 +1,37 @@
+@import 
+'theme/global-zoekhelden',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0;
+  background: url('../images/theme-logos/zoekhelden-logo.svg') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.header {
+  box-shadow: none;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+}

@@ -1,0 +1,15 @@
+.financials-row {
+  @include border(0 0 1px 0);
+  padding: 12px 0;
+  margin: 0 !important;
+}
+
+.financials-row:nth-last-child(1) {
+  border: 0;
+  color: $color-primary2;
+  font-weight: bold;
+}
+
+.financials-row:nth-last-child(2) {
+  @include border(0 0 2px 0, $color-primary2);
+}

@@ -1,0 +1,53 @@
+@import 
+'theme/global-upstreamads',
+'theme/global-components';
+
+.adscience-logo-container {
+  display: none;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo-container {
+  display: block;
+}
+.header {
+  border-bottom: solid 2px #e67e22;
+  box-shadow: none; 
+}
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.theme-logo::before {
+  font-family: "FontAwesome"; 
+  content: "\f015";
+  color:white;
+  position: relative;
+  font-size: 30px;
+  left: -50px;
+  top: -4px;
+}
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/upstreamads-logo.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    margin-left: 72px;
+    margin-top: 4px;
+    vertical-align: middle;
+}
+.funnel g:nth-child(3) path { stroke: rgb(0, 110, 255); transform-origin: 50% 50%; }
+.funnel g:nth-child(3) text { fill: rgb(0, 110, 255); }
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}

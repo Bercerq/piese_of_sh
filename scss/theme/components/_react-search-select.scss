@@ -1,0 +1,111 @@
+$select-bg-color: $grey-light;
+$select-border-color: $color-primary2;
+$select-selected-bg-color: $color-primary2;
+$select-selected-color: $white;
+$select-focused-bg-color: $grey-xx-light;
+$select-group-heading-color: $global-headings-color;
+$select-group-heading-font-weight: $font-weight-medium;
+$select-group-heading-font-size: $font-size-normal;
+$select-remove-color: $color-primary2;
+
+.react-search-select-container {
+  background: $select-bg-color !important;
+  border-radius: 4px;
+  height: 32px !important;
+  line-height: 32px !important;
+  margin-top: 9px;
+}
+
+.react-search-select-container.multiple {
+  height: auto !important;
+}
+
+.react-search-select__menu-list {
+  width: auto !important;
+}
+
+.react-search-select__group-heading {
+  font-weight: $select-group-heading-font-weight !important;
+  color: $select-group-heading-color !important;
+  font-size: $select-group-heading-font-size !important;
+  text-transform: none !important;
+}
+
+.react-search-select__single-value {
+  top: 40% !important;
+}
+
+.react-search-select__control {
+  border: none !important;
+  background: transparent !important;
+}
+
+.react-search-select__control--is-focused {
+  box-shadow: none !important;
+}
+
+.react-search-select__indicator-separator {
+  display: none !important;
+}
+
+.react-search-select__option {
+  padding-left: 20px !important;
+  line-height: 20px !important;
+}
+
+.react-search-select__option--is-focused {
+  background-color: $select-focused-bg-color !important;
+  cursor: pointer !important;
+}
+
+.react-search-select__option--is-selected {
+  background-color: $select-selected-bg-color !important;
+  color: $select-selected-color !important;
+}
+
+.react-search-select__indicators {
+  align-items: start !important;
+}
+
+.react-search-select__multi-value {
+  border-radius: 15px !important;
+}
+
+.react-search-select__multi-value__remove {
+  color: $select-remove-color !important;
+  background: transparent !important;
+  padding: 0 4px 0 2px !important;
+  cursor: pointer !important;
+}
+
+.react-search-select__multi-value__remove:hover {
+  color: $select-remove-color !important;
+  background: transparent !important;
+  opacity: 0.7 !important;
+}
+
+.react-search-select__multi-value__label {
+  font-size: 1em !important;
+  padding: 0 2px 0 6px !important;
+}
+
+.react-search-select__placeholder {
+  top: 40% !important;
+}
+
+.react-search-select__input input {
+  background: red;
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media (max-width:850px) {
+  .search-bar {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+  }
+}

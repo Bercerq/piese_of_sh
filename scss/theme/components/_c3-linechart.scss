@@ -1,0 +1,123 @@
+// Variables
+//------------------------------------------------------
+$axis-values-color:   $petrol;
+$legends-text-color:  $grey-dark;
+$grid-lines-color:    $grey-x-light;
+
+.c3 {
+  //the little line at the axis
+  .tick line {
+    stroke: transparent;
+  }
+
+  //the values at the axis
+  .tick text {
+    fill: $axis-values-color;
+  }
+
+  //the two axis lines
+  .c3-axis-x path,
+  .c3-axis-y path,
+  .c3-axis-y2 path {
+    stroke: transparent;
+  }
+
+  //the grid horizontal and vertical lines
+  .c3-grid line {
+    stroke: $grid-lines-color;
+  }
+
+  .c3-ygrid-line {
+    line {
+      stroke: #999 !important;
+    }
+  }
+
+  //the grid horizontal and vertical lines(removed dashes)
+  .c3-xgrid,
+  .c3-ygrid {
+    stroke-dasharray: initial;
+  }
+
+  //legends text
+  .c3-legend-item text {
+    fill: $legends-text-color;
+  }
+
+  //legend colored rect
+  .c3-legend-item-tile {
+    rx: 5; //making rect circular
+  }
+
+  //pacing line chart specifics
+  .c3-line-prediction,
+  .c3-line-aim,
+  .c3-line-linear {
+    stroke-dasharray: 2;
+  }
+
+  .c3-date-region {
+    fill: transparent;
+    stroke: #ccc;
+
+    text {
+      stroke: #666;
+    }
+  }
+
+  .c3-judgement-green {
+    fill: green;
+  }
+
+  .c3-judgement-yellow {
+    fill: yellow; 
+  }
+
+  .c3-judgement-orange {
+    fill: #ff8333;
+  }
+
+  .c3-judgement-red {
+    fill: red;
+  }
+
+  .c3-judgement-unknown {
+    fill: transparent;
+  }
+
+  .c3-gridline-green {
+    line {
+      stroke: green !important;
+    }
+  }
+
+  .c3-gridline-yellow {
+    line {
+      stroke: #ffc300 !important;
+    }
+  }
+
+  .c3-gridline-orange {
+    line {
+      stroke: #ff8333 !important;
+    }
+  }
+
+  .c3-gridline-red {
+    line {
+      stroke: red !important;
+    }
+  }
+
+  .c3-gridline-unknown {
+    line {
+      stroke: #999 !important;
+    }
+  }
+
+  .c3-gridline-change {
+    line {
+      stroke: #ddd !important;
+    }
+  }
+}

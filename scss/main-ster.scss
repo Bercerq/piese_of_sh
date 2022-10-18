@@ -1,0 +1,28 @@
+@import 
+'theme/global-ster',
+'theme/global-components';
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/ster-logo.svg') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 43px;
+    width: 100px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}

@@ -1,0 +1,31 @@
+.md-header {
+  background: #002E67
+}
+
+.md-typeset ul ul {
+  list-style-type: circle !important;
+}
+
+.md-typeset ul ul ul{
+  list-style-type: square !important;
+}
+
+.md-footer-meta.md-typeset {
+  display: none;
+}
+
+.md-footer-nav {
+  background-color: #efefef;
+  /* color:rgba(0, 0, 0, 0.87); */
+  color: #575757;
+}
+
+.md-footer-nav__direction {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media only screen and (max-width: 76.1875em) {
+  html .md-nav--primary .md-nav__title--site {
+    background-color: #002E67
+  }
+}

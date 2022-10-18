@@ -1,0 +1,38 @@
+@import 
+'theme/global-mediaexplain',
+'theme/global-components';
+
+.adscience-logo-container {
+  display: none;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo-container {
+  display: block;
+}
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/mediaexplain-logo.svg') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+body {
+  background-color:white;
+}
+.page-header {
+ background-color: white;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}

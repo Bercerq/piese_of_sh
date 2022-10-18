@@ -1,0 +1,48 @@
+$rule-border-color: $grey-light;
+$list-icon-color: $color-primary2;
+$card-header-bg-color: $grey-x-light;
+$card-header-font-weight: $font-weight-medium;
+$card-header-font-size: 1.1em;
+
+.inventory-rules-box {
+
+  .card {
+    padding: 0;
+    overflow: visible;
+    margin-bottom: 5px;
+  }
+
+  .card-header {
+    background-color: $card-header-bg-color;
+    font-weight: $card-header-font-weight;
+    font-size: $card-header-font-size;
+    border-bottom: none;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .inventory-rule {
+    border-top: solid 1px $rule-border-color;
+    padding: 15px;
+
+    .form-label i {
+      color: $list-icon-color;
+    }
+  }
+}
+
+.rule-link-list {
+  padding-left: 0;
+  padding-top: 10px;
+  
+  li {
+    display: inline;
+  }
+  li+li:before {
+    content: " | ";
+    padding: 0 5px;
+    color: $color-primary1;
+  }
+}

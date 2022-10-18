@@ -1,0 +1,37 @@
+@import 
+'theme/global-rtl',
+'theme/global-components';
+
+//theme exceptions
+.adscience-logo-container {
+  display: none;
+}
+
+.theme-logo-container {
+  display: block;
+}
+
+.theme-logo {
+  margin: 0;
+  background: url('../images/theme-logos/rtl-logo.svg') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 93px;
+  height: 72px;
+  vertical-align: middle;
+  margin-top: -24px;
+}
+
+.header {
+  box-shadow: none;
+}
+
+.theme-adsciencelogo-container {
+  .adscience-logo {
+    background-image: url(../images/ortec-logos/ORTEC_AdScience_logo_white_small.png) !important;
+  }
+}
+
+.sidebar {
+  box-shadow: none;
+}

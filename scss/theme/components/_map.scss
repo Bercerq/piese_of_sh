@@ -1,0 +1,27 @@
+$map-border-color: $grey-medium;
+
+.choropleth-map path {
+  cursor: pointer;
+}
+
+.choropleth-map path:hover {
+  cursor: pointer;
+  fill-opacity: 0.7;
+}
+
+.map-tooltip {
+  position: absolute;
+  z-index: 1070;
+  background: $white;
+  padding: 7px;
+  border: 1px solid $map-border-color;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.choropleth-map .map-label {
+  font-weight: 700;
+  font-size: 0.9em;
+  fill: $black;
+}

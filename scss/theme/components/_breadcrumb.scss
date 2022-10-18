@@ -1,0 +1,79 @@
+$breadcrumb-font-color:       $grey-dark !default;
+$breadcrumb-current-weight: $font-weight-medium;
+$breadcrumb-dropdown-hover-bg-color: $color-primary2;
+$breadcrumb-dropdown-hover-color: $white;
+$breadcrumb-type-weight: $font-weight-bold;
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+
+  a {
+    color: $breadcrumb-font-color;
+  }
+}
+
+.breadcrumb > li {
+  position: relative;
+}
+
+.breadcrumb > li a i {
+  font-size: 1.1em;
+}
+
+.breadcrumb > li a i:hover {
+  background: $grey-light;
+}
+
+.breadcrumb > li a.current {
+  font-weight: $breadcrumb-current-weight;
+}
+
+.breadcrumb > li span.current {
+  font-weight: $breadcrumb-current-weight;
+}
+
+.breadcrumb-dropdown {
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  white-space: nowrap;
+  max-height: 300px;
+  min-width: 250px;
+  overflow-y: auto;
+  padding: 0;
+
+  a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+
+  a.active {
+    background: $breadcrumb-dropdown-hover-bg-color;
+    color: $breadcrumb-dropdown-hover-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.breadcrumb-search-container {
+  margin: 5px;
+
+  input {
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+.breadcrumb-type {
+  font-weight: $breadcrumb-type-weight;
+  margin-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}

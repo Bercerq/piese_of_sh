@@ -1,0 +1,24 @@
+.mosaic-groups {
+  position: relative;
+  width: 2150px;
+  height: 1500px;
+  background: url('../images/whize-segments.png') no-repeat;
+  transform-origin: top left;
+}
+
+.mosaic-bubble {
+  position: absolute;
+  background: rgba($white, 0.7);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+  text-align: center;
+  cursor: pointer;
+}
+
+.mosaic-bubble-png {
+  border:solid 1px $grey-light;
+}
+
+.mosaic-bubble:hover {
+  background: $white;
+  z-index: 1000;
+}

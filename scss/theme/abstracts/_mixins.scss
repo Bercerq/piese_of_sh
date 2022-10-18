@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin input-submit($color, $color-text-hover: $color-light) {
+  color: $color;
+  border-color: $color;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-text-hover;
+    background-color: $color;
+  }
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+@mixin right-triangle($color: #fff, $width: 10px) {
+  content: ' ';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 100%;
+  border-style: solid;
+  border-width: $width;
+  border-color: transparent #fff transparent transparent;
+  margin-left: -2 * $width;
+}
+
+@mixin border($coordinates: 0 0 0 0, $color: $grey-x-light, $style: solid) {
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if not(unitless($top)) {
+    border-top: $top $style $color;
+  }
+  @if not(unitless($right)) {
+    border-right: $right $style $color;
+  }
+  @if not(unitless($bottom)) {
+    border-bottom: $bottom $style $color;
+  }
+  @if not(unitless($left)) {
+    border-left: $left $style $color;
+  }
+}
+
+/////////////////////////
+// IE 10 && 11 mixin
+@mixin respond-to-ie10-11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

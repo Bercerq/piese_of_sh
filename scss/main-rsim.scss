@@ -1,0 +1,41 @@
+@import 
+'theme/global-rsim',
+'theme/global-components';
+
+.adscience-logo-container {
+  display: none;
+}
+.theme-adsciencelogo-container {
+  display: none;
+}
+.theme-logo-container {
+  display: block;
+}
+.theme-logo::before {
+  font-family: "FontAwesome"; 
+  content: "\f015";
+  color: #5c5c5b;
+  position: relative;
+  font-size: 30px;
+  left: -50px;
+  top: -4px;
+}
+.theme-logo {
+  margin: 0;
+    background: url('../images/theme-logos/rsim-logo.png') no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    .navbar {
+      justify-content: flex-end;
+    }
+  }
+}
